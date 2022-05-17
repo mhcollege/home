@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport", content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<div class="navtab center-container" id = "navbar">
+				<a href="#" class="navtab__logo">MH College World</a>
+				<a href="#" class="navtab__link">Home</a>
+				<a href="#" class="navtab__link">Engineering</a>
+				<a href="#" class="navtab__link">Medical</a>
+				<a href="#" class="navtab__link">Diploma</a>
+				<a href="#" class="navtab__login" id="navtab__login">Login</a>
+				<a href="#" class="navtab__buger" onclick="navbar()" id="Burger">=</a>
+
+			</div>
+		</nav>
+
+		<header>
+			<div class="wrapper center-container text-align-center">
+				<div class="wrapper__img">
+					<img src="main.png">
+				</div>
+
+				<div class="wrapper__block">
+					<h1 class="wrapper__h1">
+						Be Ready to get your Desired College
+					</h1>
+					<div class="wrapper__input ">
+						<input type="text" name="user-marks" placeholder=" YOUR MHCET SCORE">
+						<button class="wrapper__button">Go</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section>
+			<div class="about center-container text-align-center">
+				<div class="about__title">
+					<h2>Our Ambition</h2>
+				</div>
+				<div class="about__text">
+					is to create a platform which helps the student to get into their dream college
+				</div>
+
+			</div>
+		</section>
+		<section>
+			<article class="center-container">
+				<h3>Get list of Colleges:</h3>
+				<p>We provide you the most predcitable list of college you can get into. with our list of 30 college processed based on your percentile.</p>
+				<p>This is done by analysis the previous year trend and provide you the best list of college you can get into.</p>
+			</article>
+		</section>
+		<footer>
+			<div class="support center-container">
+				<div class="support__text text-align-center">
+					<h2>Support us</h2>
+					<a href="" class="about_link">@</a>
+					<a href="" class="about_link">@</a>
+					<a href="" class="about_link">@</a>
+				</div>
+				
+			</div>
+		</footer>
+
+
+		<script type="text/javascript">
+			function navbar(){
+				var x = document.getElementById("navbar");
+				var y = document.getElementsByClassName("navtab__link");
+				var z = document.getElementById("navtab__login")
+				var burger = document.getElementById("Burger")
+				if (x.className === "navtab center-container"){
+					x.className += ' responsivenav';
+					for (j of y){
+						j.style.display = "block"
+
+					}
+					z.style.display = "block";
+
+				}else{
+					x.className = "navtab center-container";
+					for (j of y){
+						j.style.display = "none"
+					}
+					z.style.display = "none"
+				}
+
+
+			}
+		</script>
+	</body>
+	</html>
